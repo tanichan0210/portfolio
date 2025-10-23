@@ -21,7 +21,7 @@ const Navigation = () => {
         <Navbar className="navbar-main navbar-transparent navbar-light headroom" expand="lg" id="navbar-main">
           <Container className="d-flex align-items-center">
             <NavbarBrand href="/" className="mr-lg-5 flex-grow-1">
-              <h2 className="text-white mb-0" id="nav-title">
+              <h2 className="text-white mb-0 p-3" id="nav-title">
                 {greetings.name}
               </h2>
             </NavbarBrand>
@@ -37,12 +37,12 @@ const Navigation = () => {
             >
               <div className="navbar-collapse-header">
                 <Row>
-                  <Col className="collapse-brand" xs="6">
-                    <h3 className="text-black" id="nav-title">
+                  <Col className="collapse-brand" xs="9">
+                    <h3 className="text-black p-3" id="nav-title">
                       {greetings.name}
                     </h3>
                   </Col>
-                  <Col className="collapse-close" xs="6">
+                  <Col className="collapse-close" xs="3">
                     <button className="navbar-toggler" id="navbar_global">
                       <span />
                       <span />
