@@ -32,7 +32,12 @@ const ExperienceCard = ({ companyLogo, company, role, date, desc, descBullets }:
           </CardSubtitle>
           <CardSubtitle>{date}</CardSubtitle>
           <CardText tag="div" className="description my-3 text-left">
-            {desc}
+            {desc && desc.split('.').filter(item => item.trim()).map((item, index) => (
+              <div key={index} className="d-flex align-items-start mb-2">
+                <i className="ni ni-check-bold text-success mr-2 mt-1" style={{ fontSize: '14px' }}></i>
+                <span>{item.trim()}</span>
+              </div>
+            ))}
             <ul>
               {descBullets
                 ? descBullets.map(desc => {
