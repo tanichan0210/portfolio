@@ -19,13 +19,13 @@ const Navigation = () => {
     <>
       <header className="header-global">
         <Navbar className="navbar-main navbar-transparent navbar-light headroom" expand="lg" id="navbar-main">
-          <Container>
-            <NavbarBrand href="/" className="mr-lg-5">
-              <h2 className="text-white" id="nav-title">
+          <Container className="d-flex align-items-center">
+            <NavbarBrand href="/" className="mr-lg-5 flex-grow-1">
+              <h2 className="text-white mb-0" id="nav-title">
                 {greetings.name}
               </h2>
             </NavbarBrand>
-            <button className="navbar-toggler" aria-label="navbar_toggle" id="navbar_global">
+            <button className="navbar-toggler flex-shrink-0" aria-label="navbar_toggle" id="navbar_global">
               <span className="navbar-toggler-icon" />
             </button>
             <UncontrolledCollapse

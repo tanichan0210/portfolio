@@ -24,13 +24,13 @@ const ProjectsCard = ({ name, desc, role, github, link }: ProjectType) => {
     <Col lg="12">
       <Card className="shadow-lg--hover shadow mt-4">
         <CardBody>
-          <div className="d-flex px-3">
+          <div className="px-3">
             <div className="pl-4">
-              <div className="d-flex align-items-center mb-3">
-                <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-center mr-3">
+              <div className="d-flex align-items-center mb-3 flex-wrap flex-sm-nowrap">
+                <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-center mr-3 flex-shrink-0">
                   <i className={getProjectIcon(name)} />
                 </div>
-                <div>
+                <div className="flex-grow-1">
                   <h3 className="mb-1">{name}</h3>
                   <h5 className="text-muted">{role}</h5>
                 </div>

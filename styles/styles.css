@@ -13,3 +13,49 @@ body > div:first-child {
     min-height: 600px;
   }
 }
+
+/* Fix Experience scroll jitter */
+.section-lg {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.card {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.card img {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Mobile optimizations */
+@media (max-width: 767px) {
+  /* Fix navbar toggle button */
+  .navbar-toggler {
+    margin-left: auto;
+  }
+  
+  #nav-title {
+    font-size: 1.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Fix project card icons on mobile */
+  .icon-shape {
+    min-width: 3rem;
+    min-height: 3rem;
+  }
+  
+  .card .icon-lg {
+    width: 3rem !important;
+    height: 3rem !important;
+  }
+  
+  .card .icon-lg i {
+    font-size: 1.25rem;
+  }
+}
